@@ -11,6 +11,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(home: const MainPage());
+    return GetMaterialApp(
+      home: const MainPage(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.light(),
+
+      // themeMode: ThemeMode.light,
+    );
   }
 }
